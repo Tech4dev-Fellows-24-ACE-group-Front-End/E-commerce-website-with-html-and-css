@@ -108,3 +108,69 @@ a{
 .firstpage .row {
     margin-top: 35px;
 }
+
+
+/** About Us Page **/
+
+#About {
+    border: 2px solid rgb(155,119,231);
+    border-radius: 15px;
+    margin-top: 80px;
+}
+
+.About_Us{
+    display: flex;
+    margin: 5px;
+}
+
+#About h2 {
+    color: rgb(155,119,231);
+    font-weight: 300;
+    font-size: 3em;
+    text-align: center;
+}
+
+.About_Us p{
+    width: 80vh;
+    text-align: justify;
+    line-height: 2em;
+    margin: 5px 35px 15px 35px;
+}
+
+.About_Us img{
+    height: 55vh;
+    width: 90vh;
+    padding: 5px 25px 15px 10px;
+}
+
+
+/**Contact Us Page**/
+
+#Contact-us{
+    margin: 80px 10px 30px 10px;
+    width: 200vh;
+    padding: 5px 10px 5px 150px;
+    border-radius: 10px;
+    background-color: rgb(155,119,231);
+}
+.Contact-us h2{
+    font-size: 20px;
+    font-weight: 100;
+    padding-top: 15px;
+    color: #fff;
+}
+
+.Contact-us ul{
+    display: inline-block;
+    font-size: 10px;
+    text-align: left;
+}
+
+.list li{
+    line-height: 1em;
+    font-weight: bold;
+    padding: 15px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
