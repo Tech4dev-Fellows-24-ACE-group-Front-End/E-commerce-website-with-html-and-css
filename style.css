@@ -147,21 +147,20 @@ a{
 /**Contact Us Page**/
 
 #Contact-us{
-    margin: 80px 10px 30px 10px;
+    margin: 50px 10px 30px 10px;
     width: 200vh;
     padding: 5px 10px 5px 150px;
     border-radius: 10px;
-    background-color: rgb(155,119,231);
 }
 .Contact-us h2{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 100;
     padding-top: 15px;
     color: #fff;
 }
 
 .Contact-us ul{
-    display: inline-block;
+    display: flex;
     font-size: 10px;
     text-align: left;
 }
@@ -170,7 +169,7 @@ a{
     line-height: 1em;
     font-weight: bold;
     padding: 15px;
-    margin: 15px;
+    margin: 10px;
     background-color: white;
     border-radius: 10px;
 }
