@@ -21,26 +21,26 @@ nav{
     text-align: right;
 }
 
-nav ul{
+.navbar nav ul{
     display: inline-block;
     list-style-type: none;
 }
 
-nav ul li{
+.navbar ul li{
     display: inline-block;
     margin-right: 20px;
 }
-nav ul li:hover{
+.navbar nav ul li:hover{
     color: white;
 }
 
-a{
+.navbar a{
     font-size: 15px;
     text-decoration: none;
     color:black;
 
 }
-a:hover{
+.navbar a:hover{
     color: #fff;;
 }
 #cart{
@@ -91,3 +91,80 @@ img{
         font-size: 20px;
     }
 }
+/* footer */
+
+footer{
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 0;
+    width: 100%;
+  
+  }
+  
+  @media (max-width: 600px){
+    .footer-content {
+      flex-direction: column;
+    }
+  }
+  
+  .footer-content {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+  
+  }
+  
+  li {
+    padding: 2px;
+  }
+  
+  ul li a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+   .copy-right{
+  padding-left: 50px;
+  }
+  
+  .Subscribe {
+    padding-right: 20px;
+    padding-bottom: 20px;
+  
+  }
+  
+  hr {
+    opacity: 0.5;
+  }
+  .copy-right p{
+    opacity: 0.5;
+    padding: 16px 0;
+    font-size: 15px;
+    margin: 0;
+  }
+  input {
+    padding: 5px;
+    background-color: #dbd6d6;
+    border: 1px;
+    border-radius: 4px;
+  }
