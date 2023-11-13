@@ -12,7 +12,7 @@ body{
 }
 
 .firstpage {
-    background: radial-gradient(rgb(228, 212, 229), #e27ccb);
+    /* background: radial-gradient(rgb(228, 212, 229), #e27ccb); */
     
 }
 .navbar {
@@ -126,15 +126,12 @@ nav ul{
 
 /** About Us Page **/
 
-#About {
-    border: 2px solid rgb(155,119,231);
-    border-radius: 15px;
-    margin-top: 80px;
+#About{
+    margin-top: 50px;
 }
-
 .About_Us{
     display: flex;
-    margin: 5px;
+    margin: 10px  100px;
 }
 
 #About h2 {
@@ -142,6 +139,7 @@ nav ul{
     font-weight: 300;
     font-size: 3em;
     text-align: center;
+    text-decoration: underline;
 }
 
 .About_Us p{
@@ -152,8 +150,65 @@ nav ul{
 }
 
 .About_Us img{
-    height: 55vh;
-    width: 90vh;
-    padding: 5px 25px 15px 10px;
+    height: 300px;
+    width: 500px;
+    padding-left: 20px;
+    border-radius: 5px;
 }
 
+/* our service */
+#services{
+  display: block;  
+  margin-top: 40px;
+}
+.services{
+    text-align: center;
+    display: flex;
+    margin: 10px  100px;
+    
+}
+.services p{
+    max-width: 700px;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+#services h2{
+    color: rgb(155,119,231);
+    font-weight: 300;
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+
+}
+#services p{
+    letter-spacing: 1.5px;
+}
+
+.service-list{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* .service-listitem{
+    flex: 50%;
+    margin: 5px;
+} */
+.service-list img{
+    height: 400px;
+    width: 600px;
+    padding: 10px;
+}
+.service-list p{
+    width: 50%;
+    letter-spacing: 1.5px;
+    margin: 150px 50px;
+}
+.home{
+    display: flex;
+    
+}
+.office{
+    display: flex;
+}

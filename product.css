@@ -6,6 +6,8 @@ body{
     align-items: center;
     padding: 20px;
     background: radial-gradient(rgb(228, 212, 229), #e27ccb);
+    
+    
 }
 .logo {
     display: flex;
@@ -24,11 +26,13 @@ nav{
 .navbar nav ul{
     display: inline-block;
     list-style-type: none;
+    
 }
 
 .navbar ul li{
     display: inline-block;
     margin-right: 20px;
+    
 }
 .navbar nav ul li:hover{
     color: white;
