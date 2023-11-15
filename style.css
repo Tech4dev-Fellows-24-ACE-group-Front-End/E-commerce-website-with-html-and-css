@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+
 }
 
 .firstpage {
@@ -57,7 +58,6 @@ nav ul {
 nav ul li:hover {
     width: 130px;
     height: 50px;
-    background: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -348,10 +348,23 @@ input::placeholder {
 
 
 /* ----------------- Media Queries ---------------------- */
-@media screen and (max-width:1235px) {
-    nav {
-        display: none;
-    }
+@media screen and (max-width:1300px) {
+   .navbar{
+    display: flex;
+    justify-content: space-evenly;
+   }
+   nav ul {
+    display: flex;
+    padding-right: 120px;
+    gap: 15px;
+    /* width: 100%; */
+   }
+   .logo{
+    gap: 20px;
+   }
+   #cart{
+    /* padding-right: 20px; */
+   }
 
     .col h1 {
         font-size: 35px;
@@ -382,8 +395,35 @@ input::placeholder {
 
 @media (max-width: 600px) {
     .firstpage {
+        height: auto;
         padding: 15px 0px;
     }
+     .navbar{
+        display: flex;
+        flex-direction: column;
+        padding: 5% 2%;
+        justify-content: space-between;
+        text-align: center;
+     }
+     .logo{
+        margin-bottom: 20px;
+     }
+     nav ul{
+        flex-direction: column;
+        gap: 5px;
+     }
+     nav ul li:hover{
+        width: auto;
+        height: auto;
+        /* box-shadow: none; */
+     }
+     #cart{
+        display: flex;
+     }
+     .container{
+        padding: 0;
+     }
+   
 
     .footer-content {
         flex-direction: column;
