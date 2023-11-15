@@ -1,179 +1,210 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
+
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
 }
 
 .firstpage {
-    /* background: radial-gradient(rgb(228, 212, 229), #e27ccb); */
-    
+    background: radial-gradient(rgb(228, 212, 229), #e27ccb);
+    opacity: 96%;
+    height: 100vh;
+    background-image: url(./media/images/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .navbar {
     display: flex;
     align-items: center;
-    padding: 20px;
+    justify-content: space-between;
+    padding: 2% 5%;
+    gap: 60px;
 }
 
 .logo {
-     display: flex; 
-  
+    display: flex;
 }
-.logo img{
-    margin-left: 20px;
+
+.logo img {
     border-radius: 50%;
-   
+    width: 80px;
+    height: 80px;
 }
 
-nav{
+nav {
     flex: 1;
-    text-align: right;
 }
 
-nav ul{
-    display: inline-block;
-    list-style-type: none;
+nav ul {
+    display: flex;
+    justify-content: end;
+    gap: 60px;
+    width: 100%;
 }
 
-.container nav ul li{
-    display: inline-block;
-    margin-right: 20px;
-}
-.container nav ul li:hover{
-    color: black;
+nav ul li:hover {
+    width: 130px;
+    height: 50px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    box-shadow: 2px 2px 2px 2px white;
 }
 
-.container a{
-    font-size: 15px;
+.container a {
+    font-size: 20px;
+    font-weight: 500;
     text-decoration: none;
-    color:black;
+    color: black;
 
 }
-.container a:hover{
+
+.container a:hover {
     color: white;
+
 }
-#cart{
+
+#cart {
     height: 30px;
     width: 30px;
 }
 
 
 .container {
-    max-width: 1300px;
+    max-width: 100%;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
-    background-image: url(./media/images/background2.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
+
 }
-.image{  
+
+.image {
     height: 100px;
-     width: 100px
- }
+    width: 100px
+}
 
 .row {
     display: flex;
+    padding: 30px 20%;
+    width: 80%;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .col {
-    flex-basis: 50%;
-    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 
-.col h1{
+.col h1 {
     font-size: 45px;
     line-height: 60px;
-    
-    color: black;
-}
-.col h4{
-    font-size: 15px;
-    margin-left: 50px;
     color: black;
 }
 
-.col .btn{
-    display: inline-block;
-    background:black;
-    color: #fff;
-    padding: 8px 30px;
-    margin: 30px 50px;
-    margin-top: 50px;
-    border-radius: 30px;
-    
-}
-.col .btn:hover{
+.col h4 {
+    font-size: 16px;
     background: #fff;
+    border-radius: 10px;
+    line-height: 1.6rem;
+    box-shadow: 5px 4px 4px 4px gray;
+    padding: 20px;
     color: black;
+    width: 100%;
 }
 
+.col .btn {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    box-shadow: 5px 4px 4px 4px gray;
+    padding: 8px 30px;
+    border-radius: 30px;
+    width: 100%;
+}
 
-.firstpage .row {
-    margin-top: 35px;
+.col .btn a,
+p {
+    color: #fff;
+    font-size: 24px;
 }
 
 
 /** About Us Page **/
 
-#About{
-    margin-top: 50px;
-}
-.About_Us{
+.about-container {
+    width: 100%;
     display: flex;
-    margin: 10px  100px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 15%;
+
 }
 
 #About h2 {
-    color: rgb(155,119,231);
+    color: rgb(155, 119, 231);
     font-weight: 300;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     text-decoration: underline;
 }
 
-.About_Us p{
-    width: 80vh;
-    text-align: justify;
-    line-height: 2em;
-    margin: 5px 35px 15px 35px;
+.About_Us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 30px;
 }
 
-.About_Us img{
+.About_Us p {
+    text-align: justify;
+    width: 100%;
+    color: #000;
+}
+
+.About_Us img {
     height: 300px;
     width: 500px;
-    padding-left: 20px;
     border-radius: 5px;
 }
 
 /* our service */
-#services{
-  display: block;  
-  margin-top: 40px;
+.service-container {
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.services{
+
+.services {
     text-align: center;
     display: flex;
-    margin: 10px  100px;
-    
+    align-items: center;
+    justify-content: center;
+    color: #000;
 }
-.services p{
-    max-width: 700px;
-    margin-left: 200px;
-    margin-top: 10px;
+
+.services p {
+    color: #000;
+    text-align: justify;
+    width: 80%;
 }
-#services h2{
-    color: rgb(155,119,231);
+
+#services h2 {
+    color: rgb(155, 119, 231);
     font-weight: 300;
     font-size: 3em;
     text-align: center;
@@ -182,33 +213,230 @@ nav ul{
     text-underline-offset: 3px;
 
 }
-#services p{
-    letter-spacing: 1.5px;
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    padding-top: 40px;
 }
 
-.service-list{
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
-/* .service-listitem{
-    flex: 50%;
-    margin: 5px;
-} */
-.service-list img{
+.service-list img {
     height: 400px;
-    width: 600px;
+    width: 400px;
     padding: 10px;
 }
-.service-list p{
+
+.service-list p {
     width: 50%;
     letter-spacing: 1.5px;
-    margin: 150px 50px;
+    text-align: justify;
+    color: #000;
 }
-.home{
+
+.home {
     display: flex;
-    
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
 }
-.office{
+
+.office {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+
+
+/* ------------------------ footer section ----------------------- */
+footer {
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 0;
+    margin-top: 20px;
+    padding: 20px 5%;
+
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 20px 20px;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+
+}
+
+li {
+    padding: 2px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.footer-content h3 {
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #dbd6d6;
+}
+
+.copy-right {
+    padding-left: 50px;
+}
+
+.Subscribe {
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+}
+
+hr {
+    opacity: 0.5;
+}
+
+.copy-right p {
+    opacity: 0.5;
+    padding: 16px 0;
+    font-size: 15px;
+    margin: 0;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.email input {
+    padding: 5px;
+    background: transparent;
+    border: 1px solid ghostwhite;
+    box-shadow: 0px 2px 2px 1px gray;
+    border-radius: 4px;
+    height: 50px;
+}
+
+input::placeholder {
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+
+
+/* ----------------- Media Queries ---------------------- */
+@media screen and (max-width:1235px) {
+    nav {
+        display: none;
+    }
+
+    .col h1 {
+        font-size: 35px;
+        line-height: 50px;
+        transition: 850ms;
+    }
+
+    .About_Us {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    input {
+        width: 60%;
+    }
+
+    .col h4 {
+        width: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .firstpage {
+        padding: 15px 0px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .About_Us img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .col h1 {
+        font-size: 18px;
+        line-height: 1.4rem;
+        transition: 850ms;
+        padding-top: 20px;
+    }
+
+    .col h4 {
+        font-size: 14px;
+        line-height: 1.3rem;
+        width: 100%;
+        transition: 850ms;
+    }
+
+    .col .btn {
+        border-radius: 30px;
+        width: 100%;
+    }
+
+    .col .btn a,
+    p {
+        transition: 850ms;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    #services h2{
+        font-size: 22px;
+        padding-top: 40px;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+    .office{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .home img, .office img{
+        height: 300px;
+        width: 300px;
+    }
+    .home p, .office p{
+        line-height: 1.3rem;
+        width: 80%;
+    }
 }
