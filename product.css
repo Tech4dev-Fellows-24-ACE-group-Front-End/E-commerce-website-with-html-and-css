@@ -202,8 +202,7 @@ input::placeholder {
 
 @media (max-width:1045px) {
   .Products-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     transition: 850ms;
   }
 }
@@ -216,12 +215,26 @@ input::placeholder {
   nav {
     display: none;
   }
+  .flex-box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-items{
+    width: 60%;
+  }
 
   .Products-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     transition: 850ms;
+    margin-top: 30px;
   }
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 
 }
 
