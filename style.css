@@ -30,12 +30,17 @@ body {
 
 .logo {
     display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .logo img {
     border-radius: 50%;
     width: 80px;
     height: 80px;
+}
+.logo h1{
+    font-size: 38px;
 }
 
 nav {
