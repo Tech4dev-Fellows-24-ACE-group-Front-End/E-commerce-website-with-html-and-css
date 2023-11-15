@@ -239,7 +239,8 @@ input::placeholder {
     /* box-shadow: none; */
  }
  #cart{
-    display: block;
+  padding-top: 10px;
+    display: flex;
  }
  .container{
   padding: 0;

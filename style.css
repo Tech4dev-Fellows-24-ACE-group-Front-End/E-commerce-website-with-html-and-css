@@ -404,6 +404,7 @@ input::placeholder {
         padding: 5% 2%;
         justify-content: space-between;
         text-align: center;
+        align-items: center;
      }
      .logo{
         margin-bottom: 20px;
@@ -419,6 +420,9 @@ input::placeholder {
      }
      #cart{
         display: flex;
+        flex-direction: column;
+        margin-bottom: 200px;
+        margin-right: 170px;
      }
      .container{
         padding: 0;
